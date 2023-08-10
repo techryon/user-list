@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import ContactCard from "./ContactCard";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <ContactCard
+        imgUrl='https://via.placeholder.com/150'
+        name='Jenny Han'
+        email='jenny.han@notreal.com'
+        age='25'
+      />
+      <ContactCard
+        imgUrl='https://via.placeholder.com/150'
+        name='Paul Jones'
+        email='paul.jones@notreal.com'
+        age='32'
+      />
+      <ContactCard
+        imgUrl='https://via.placeholder.com/150'
+        name='Peter Pan'
+        email='peter.pan@neverland.com'
+        age='100'
+      />
     </div>
   );
-}
+};
 
 export default App;
