@@ -4,7 +4,7 @@ const ContactCard = (props) => {
   const [showAge, setShowAge] = useState(false);
   return (
     <div className='contact-card'>
-      <img src={props.imgUrl} alt='profile'></img>
+      <img src={props.avatarUrl} alt='profile'></img>
 
       <div className='user-details'>
         <p>Name: {props.name}</p>
